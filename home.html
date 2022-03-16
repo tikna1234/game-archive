@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Game Archive</title>
+</head>
+<body style="background-image: url(scenic.jpg);">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="2018-2019.html">2018-2019</a></li>
+        <li><a href="2019-2020.html">2019-2020</a></li>
+        <li><a href="2020-2021.html">2020-2021</a></li>
+        <li><a href="DEAD.html">DEAD</a></li>
+      </ul>
+    </div>
+  </nav><br>
+  <p style="font-size: large; color: gold;">what is the current popular rage game?</p><br>
+      <button  type="button" class="btn" onclick="success()">Pogostuck</button>
+      <button type="button" class="btn" onclick="success()">JumpKing</button>
+      <button type="button" class="btn" onclick="death()">Getting over it</button>
+      <button type="button" class="btn" onclick="death()">Geometry Dash</button>
+    <p id="cd" style="font-size: large; color: gold;"></p>
+  <script>
+    var msg;
+    msg=document.getElementById("cd");
+    msg.innerHTML="";
+    function success(){
+      msg.innerHTML="your answer is correct";
+    }
+    function death()
+    {
+      location.replace("Dead.html");
+    }
+  </script>
+</body>
+</html>
